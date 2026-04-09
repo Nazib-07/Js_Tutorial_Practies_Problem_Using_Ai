@@ -16,3 +16,16 @@ function myFunction (otp){
     }
 }
 console.log(myFunction(userInput));
+
+///Question on my versity mid exam:
+let userInput = String(prompt("Enter the code"));
+function checkCode(input){
+    if(input==="ICE3205"){
+        document.querySelector('#check').innerHTML = "<h3>Access Granted</h3>";
+    }else{
+         document.querySelector('#check').innerHTML = "<h3>Error code</h3>"
+    }
+}
+document.write(checkCode(userInput));
+
+
