@@ -115,3 +115,32 @@ for(let brck = 1; brck<=10; brck++){
     }
 }
 
+//Funcction practies..
+const newFunction = function (a,b){
+    return a + b;
+}
+console.log(newFunction(5,5));
+
+let button = document.querySelector('#btn');
+const myFunction = ()=>{
+    alert(`It's done by create function`);
+    button.addEventListener('click', ()=>{
+        let p_tag = document.createElement('h2');
+        p_tag.textContent = 'Function is properly working!';
+        document.body.append(p_tag);
+    });
+}
+myFunction();
+
+//Try string method using in function.
+let Button = document.querySelector('#btn');
+const mynewFunction = (name, age)=>{
+    Button.addEventListener('click', ()=>{
+        let h3_tag = document.createElement('h3');
+        console.log(name, age);
+        let Trim = name.trim();
+        h3_tag.textContent = `Name is ${Trim} and age is ${age}`;
+        document.body.append(h3_tag);
+    });
+}
+mynewFunction('S M Nazib Ul Alam', 22);
