@@ -144,3 +144,25 @@ const mynewFunction = (name, age)=>{
     });
 }
 mynewFunction('S M Nazib Ul Alam', 22);
+
+//Function as a constructor..
+const myfunction = new Function("a", "b", "return a*b");
+let value = document.querySelector('#para');
+value.textContent = `The result of multiplication: ${myfunction(5,5)}`;
+
+fun('Top');
+function fun (pos){
+    let headding = document.createElement('h2');
+    headding.textContent = `The function is the position: ${pos}`;
+    document.body.appendChild(headding);
+}
+fun('Bottom');
+if(1){
+    fun1('Top');
+function fun1 (pos1){
+    let headding1 = document.createElement('h2');
+    headding1.textContent = `The function is the position: ${pos1}`;
+    document.body.appendChild(headding1);
+}
+fun1('Bottom');
+}
