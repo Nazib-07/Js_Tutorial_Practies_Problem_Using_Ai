@@ -186,3 +186,7 @@ console.log(`Numbers are: ${coun} and type is ${typeof(coun)}`);
 console.log(`Max number is: ${Math.max(3,10,5,8,50, 2)} and min number is: ${Math.min(3,10,5,8,50, 2)}`);
 
 console.log (Math.floor((Math.random()*10))+1);
+//Array slice and splice method...
+let array = [0,1,2,3,4,5];
+console.log(array.slice(0,2), array ,array.splice(1,4), array);
+//when use slice and splice method it's manupulate the main array or array lenght..
