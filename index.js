@@ -342,6 +342,27 @@ console.log('Before update the food price: ', foodFood);
 const update = Object.seal(foodFood);
 foodFood.price = 450;
 console.log('After update the food price: ', foodFood);
+//Function practise..
+function myRoutine(){
+    const work={
+        rise: 'Walking',
+        food: 'At 8am take breakfast',
+        school: 'Go to school'
+    }
+
+    for(const key in work){
+        const value = work[key];
+        console.log(value);
+    }
+}
+myRoutine();
+
+
+
+
+
+
+
 
 
 
