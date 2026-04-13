@@ -74,7 +74,42 @@ while(multiply<=10){
     console.log(`Table of three: ${multiply} * 3 = ${result}`);
     multiply++;
 }
+//For loop practies
+let sum = 0;
+for(let i=31; i<=58; i++){
+   console.log(i);
+    sum = sum+i;
+}
+console.log(sum);
 
+//2. problem..
+for(let i = 20; i<=50; i++){
+    if(i%7===0){
+      console.log(i);
+    }
+}
+//3. problem
+for(let i = 40; i<=80; i++){
+    if(i%5===0 && i%7===0){
+        console.log(i);
+    }
+}
+//4. problem
+let summation = 0;
+for(let i = 1; i<=40; i = i+4){
+    console.log(i);
+    summation = summation +i;
+}
+console.log(summation);
+//5. problem
+let add = 0;
+for(let i = 1; i<=50; i++){
+    if(i%3===0 && i%4===0){
+        console.log(`After mod: ${i}`);
+        add = add+i;
+    }
+}
+console.log(`Addition value: ${add}`);
 
 
 
