@@ -276,6 +276,79 @@ for(let val in building){
     console.log(val, building[val]);
 }
 
+//Freez and seal method of object practise..
+//1.
+const headPhone ={
+    brand:'Sony',
+    price:3000,
+    color:'red'
+}
+const objFreez = Object.freeze(headPhone);
+headPhone.brand = 'Blue';
+console.log(headPhone);
+console.log('Using for in loop');
+for(let key in headPhone){
+    const value = headPhone[key];
+    console.log(key, value);
+}
+console.log('Using for of loop');
+const keyy = Object.keys(headPhone);
+for(const key of keyy){
+    const findValue = headPhone[key];
+    console.log(key, findValue);
+}
+
+//2.
+const player = {
+    name:'Messi',
+    goal: 800,
+    club: 'Inter Miami'
+}
+
+const newAdd = Object.seal(player);
+console.log('Before update the player object: ',player);
+player.position = 'Lefty';
+player.club = 'Berselona';
+console.log('After update the player object: ',player);
+
+//3.
+const book = {
+    name:'Harry Poter',
+    author: 'JK Rowling',
+    page: 500,
+    duty: 'Null'
+}
+console.log(book);
+delete book.duty;
+console.log(book);
+
+//4..
+const animale = {
+    name:'Tiger',
+    location:'Sundarban'
+}
+console.log(animale);
+const freezValue = Object.freeze(animale);
+animale.location = 'Amazon Forest';
+console.log('After uppdate animale location: ',animale);
+
+//5..
+const foodFood = {
+    name:'pizza',
+    price:500,
+    size:'Large'
+}
+console.log('Before update the food price: ', foodFood);
+const update = Object.seal(foodFood);
+foodFood.price = 450;
+console.log('After update the food price: ', foodFood);
+
+
+
+
+
+
+
 
 //ARray Methods....
 let demon_slayer = ['Tanjiro', 'Inoske', 'Tomioka', 'Giue'];
