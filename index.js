@@ -431,6 +431,30 @@ function numberCheck(a){
     }
 }
 console.log(numberCheck(2));
+//5..
+function evenOddarray(arr){
+    if(arr.length%2===0){
+        console.log('Yes, it is a even array');
+    }else{
+        console.log('It is an odd array');
+    }
+}
+evenOddarray(['HTML', 'CSS', 'Javascript', 'React']);
+
+//6..
+function nameCheck(naam){
+    return naam[0];
+
+}
+console.log(`First letter is ${nameCheck('Nazib')}`);
+//7..
+function arrayAdd(array){
+    const add = array[0]+array[1];
+    return add;
+}
+console.log(`Addition result is ${arrayAdd ([5,20, 15, 56,25])}`);
+
+
 
 
 
