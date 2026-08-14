@@ -593,3 +593,28 @@ console.log(6)
 function dosomething(){
     console.log(3);
 }
+
+// Js Asynchronous...
+// Timeout js...
+console.log(1)
+console.log(2)
+setTimeout(()=>{
+    console.log(3)
+}, 4000)
+console.log(4)
+console.log(5)
+
+//TimeiInterval..
+setInterval(()=>{
+    console.log('I M U')
+}, 1000); // infinite run..
+
+let num = 0
+const intervel = setInterval(()=>{
+    num++;
+    console.log(num);
+
+    if (num==5){
+        clearInterval(intervel);
+    }
+}, 1000);
