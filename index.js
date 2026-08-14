@@ -580,3 +580,16 @@ if(picnic.includes('Sakib')){
 }else{
     console.log('Ghor ey jah beda');
 }
+
+// Js Asynchronous...
+// Single threaded js...
+console.log(1)
+console.log(2)
+console.log(3)
+dosomething();
+console.log(4)
+console.log(5)
+console.log(6)
+function dosomething(){
+    console.log(3);
+}
