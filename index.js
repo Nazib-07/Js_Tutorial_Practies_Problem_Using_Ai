@@ -646,3 +646,20 @@ console.log(shopJson);
 
 const shopObj = JSON.parse(shopJson);
 console.log(shopObj);
+
+// Js promise...
+const orderFood = new Promise((resolve, reject)=>{
+    const foodReady = true
+    if (foodReady){
+        resolve('Food is ready!')
+    } else{
+        reject('Baap er hotel bondo')
+    }
+})
+orderFood.then ((mess)=>{
+    console.log(mess)
+}).catch((error)=>{
+    console.log(error)
+}).finally(()=>{
+    console.log('Order process is completed.')
+})
