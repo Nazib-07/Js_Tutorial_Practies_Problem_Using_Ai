@@ -618,3 +618,31 @@ const intervel = setInterval(()=>{
         clearInterval(intervel);
     }
 }, 1000);
+
+//Js Json...
+// Js As Json...
+const user = {
+    id: 7,
+    name: 'John',
+    job: 'developer'
+};
+const userJson = JSON.stringify(user)
+//console.log(userJson);
+
+const shop = {
+    owner: 'Alia',
+    address: {
+        street: 'Kochukhet voot er goli',
+        ciity: 'ranbir',
+        country: 'BD'
+    },
+    product: ['Laptop', 'Mic', 'Monitor', 'keyboard'],
+    reveneue: 45000,
+    isOpen: true,
+    isNew: false
+};
+const shopJson = JSON.stringify(shop);
+console.log(shopJson);
+
+const shopObj = JSON.parse(shopJson);
+console.log(shopObj);
